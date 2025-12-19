@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leftover Chef</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Plate It Up</h1>
+    <div class="search-container">
+        <input type="text" id="ingredient-input" placeholder="Enter an ingredient (ex. chicken, egg)">
+        <button id="search-btn">Find Meals</button>
+        <button id="reset-btn">Reset</button>
+    </div>
+
+    <div id="meal-list"></div>
+
+    <div id="recipe-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="recipe-details"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
