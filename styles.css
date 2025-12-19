@@ -25,6 +25,7 @@ p {
     font-family: "Barlow", Arial, Helvetica, sans-serif;
 }
 
+
 body {
     line-height: 1.5;
     font-family: "Albert Sans", Arial, sans-serif;
@@ -33,6 +34,17 @@ body {
     padding: 1.5rem;
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+h1 a:hover {
+    opacity: 0.8;
 }
 
 img {
@@ -88,6 +100,7 @@ button {
     font-weight: 600;
     transition: all 0.2s ease;
 }
+
 
 /* Primary Button (Find Meals) */
 #search-btn {
@@ -248,7 +261,30 @@ button {
     text-decoration: none;
 }
 
-#recipe-details a {
+#recipe-details a:hover {
     transform: scale(1.05);
     background-color: var(--bg-hover);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    .search-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input, button {
+        width: 100%;
+    }
+
+    #reset-btn {
+        margin-left: 0;
+    }
+
+    #meal-list {
+        grid-template-columns: 1fr;
+    }
 }
